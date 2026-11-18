@@ -1,0 +1,111 @@
+.match-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.25rem 2rem;
+  background: var(--bg-card);
+  border-radius: 18px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.4s ease both;
+  flex-wrap: wrap;
+}
+
+.match-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(229, 29, 56, 0.2), rgba(0, 112, 243, 0.2));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: 800;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+}
+
+.badge-crest-home {
+  color: #ff3b53;
+}
+
+.badge-divider {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.badge-crest-away {
+  color: #38bdf8;
+}
+
+.match-info {
+  flex: 1;
+  min-width: 260px;
+}
+
+.match-league-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--gold-accent);
+  margin-bottom: 0.15rem;
+}
+
+.match-title {
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.match-subtitle {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-top: 0.2rem;
+}
+
+.header-legend {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.legend-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.65rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.home-dot {
+  background: #e51d38;
+  box-shadow: 0 0 6px #e51d38;
+}
+
+.contested-dot {
+  background: #ffffff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+.away-dot {
+  background: #0070f3;
+  box-shadow: 0 0 6px #0070f3;
+}
+
+.dead-dot {
+  background: #94a3b8;
+}

@@ -1,0 +1,156 @@
+.timeline-card {
+  background: var(--bg-card);
+  border-radius: 18px;
+  padding: 1.75rem 2rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  animation: fadeIn 0.5s ease both;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.timeline-legend-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.t-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.red-pill {
+  color: #ff3b53;
+  border: 1px solid rgba(229, 29, 56, 0.3);
+}
+
+.white-pill {
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.blue-pill {
+  color: #38bdf8;
+  border: 1px solid rgba(0, 112, 243, 0.3);
+}
+
+.slate-pill {
+  color: #94a3b8;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.timeline-visual-area {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 1.25rem 1rem 0.75rem;
+  border: 1px solid var(--border-color);
+}
+
+.timeline-bars-track {
+  display: flex;
+  align-items: stretch;
+  gap: 3px;
+  height: 150px;
+}
+
+.timeline-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.75;
+  transform: scaleY(0.05);
+  transform-origin: bottom;
+  transition: opacity 0.2s ease, transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.timeline-column.grown {
+  transform: scaleY(1);
+}
+
+.timeline-column:hover {
+  opacity: 1;
+  transform: scaleY(1.04) scaleX(1.3);
+  z-index: 5;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+}
+
+.bar-slice {
+  width: 100%;
+  flex-shrink: 0;
+  transition: height 0.3s ease;
+}
+
+.home-slice {
+  background: #e51d38;
+}
+
+.contested-slice {
+  background: #ffffff;
+}
+
+.away-slice {
+  background: #0070f3;
+}
+
+.dead-slice {
+  background: #475569;
+}
+
+.timeline-time-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding: 0 4px;
+}
+
+.timeline-hover-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 0.65rem 1.25rem;
+  animation: fadeIn 0.15s ease;
+  flex-wrap: wrap;
+}
+
+.hover-time-tag {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.hover-metrics {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.h-metric.red {
+  color: #ff3b53;
+}
+.h-metric.white {
+  color: #ffffff;
+}
+.h-metric.blue {
+  color: #38bdf8;
+}
+.h-metric.slate {
+  color: #cbd5e1;
+}

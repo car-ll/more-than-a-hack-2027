@@ -1,0 +1,1799 @@
+{
+  "match": "FC Barcelona vs Athletic Club",
+  "date": "Matchday 2 \u00b7 2026/27",
+  "totalFrames": 199319,
+  "fps": 25,
+  "overall": {
+    "totalGradedFrames": 158857,
+    "liveFrames": 89676,
+    "rawCounts": {
+      "home": 43653,
+      "away": 33113,
+      "contested": 12910,
+      "dead": 69181
+    },
+    "fullMatch": {
+      "home": 27.5,
+      "contested": 8.1,
+      "away": 20.8,
+      "dead": 43.5
+    },
+    "inPlay": {
+      "home": 48.7,
+      "contested": 14.4,
+      "away": 36.9
+    }
+  },
+  "halves": [
+    {
+      "totalGradedFrames": 79467,
+      "liveFrames": 44824,
+      "rawCounts": {
+        "home": 22340,
+        "away": 16105,
+        "contested": 6379,
+        "dead": 34643
+      },
+      "fullMatch": {
+        "home": 28.1,
+        "contested": 8.0,
+        "away": 20.3,
+        "dead": 43.6
+      },
+      "inPlay": {
+        "home": 49.8,
+        "contested": 14.2,
+        "away": 35.9
+      },
+      "half": 1
+    },
+    {
+      "totalGradedFrames": 79390,
+      "liveFrames": 44852,
+      "rawCounts": {
+        "home": 21313,
+        "away": 17008,
+        "contested": 6531,
+        "dead": 34538
+      },
+      "fullMatch": {
+        "home": 26.8,
+        "contested": 8.2,
+        "away": 21.4,
+        "dead": 43.5
+      },
+      "inPlay": {
+        "home": 47.5,
+        "contested": 14.6,
+        "away": 37.9
+      },
+      "half": 2
+    }
+  ],
+  "minutes": [
+    {
+      "minute": 0,
+      "isMatchTime": false
+    },
+    {
+      "minute": 1,
+      "isMatchTime": false
+    },
+    {
+      "minute": 2,
+      "isMatchTime": false
+    },
+    {
+      "minute": 3,
+      "isMatchTime": false
+    },
+    {
+      "minute": 4,
+      "isMatchTime": false
+    },
+    {
+      "minute": 5,
+      "isMatchTime": false
+    },
+    {
+      "minute": 6,
+      "isMatchTime": false
+    },
+    {
+      "minute": 7,
+      "isMatchTime": true,
+      "full": {
+        "home": 39.9,
+        "contested": 16.8,
+        "away": 38.0,
+        "dead": 5.3
+      },
+      "inPlay": {
+        "home": 42.1,
+        "contested": 17.7,
+        "away": 40.2
+      }
+    },
+    {
+      "minute": 8,
+      "isMatchTime": true,
+      "full": {
+        "home": 66.3,
+        "contested": 5.1,
+        "away": 13.2,
+        "dead": 15.3
+      },
+      "inPlay": {
+        "home": 78.3,
+        "contested": 6.1,
+        "away": 15.6
+      }
+    },
+    {
+      "minute": 9,
+      "isMatchTime": true,
+      "full": {
+        "home": 58.3,
+        "contested": 15.5,
+        "away": 19.2,
+        "dead": 7.1
+      },
+      "inPlay": {
+        "home": 62.7,
+        "contested": 16.6,
+        "away": 20.7
+      }
+    },
+    {
+      "minute": 10,
+      "isMatchTime": true,
+      "full": {
+        "home": 35.1,
+        "contested": 18.1,
+        "away": 43.6,
+        "dead": 3.2
+      },
+      "inPlay": {
+        "home": 36.2,
+        "contested": 18.7,
+        "away": 45.0
+      }
+    },
+    {
+      "minute": 11,
+      "isMatchTime": true,
+      "full": {
+        "home": 11.3,
+        "contested": 4.2,
+        "away": 33.2,
+        "dead": 51.3
+      },
+      "inPlay": {
+        "home": 23.3,
+        "contested": 8.6,
+        "away": 68.1
+      }
+    },
+    {
+      "minute": 12,
+      "isMatchTime": true,
+      "full": {
+        "home": 64.9,
+        "contested": 0.7,
+        "away": 2.7,
+        "dead": 31.7
+      },
+      "inPlay": {
+        "home": 95.0,
+        "contested": 1.1,
+        "away": 3.9
+      }
+    },
+    {
+      "minute": 13,
+      "isMatchTime": true,
+      "full": {
+        "home": 61.3,
+        "contested": 0.5,
+        "away": 8.9,
+        "dead": 29.2
+      },
+      "inPlay": {
+        "home": 86.6,
+        "contested": 0.8,
+        "away": 12.6
+      }
+    },
+    {
+      "minute": 14,
+      "isMatchTime": true,
+      "full": {
+        "home": 76.5,
+        "contested": 13.8,
+        "away": 6.9,
+        "dead": 2.9
+      },
+      "inPlay": {
+        "home": 78.7,
+        "contested": 14.2,
+        "away": 7.1
+      }
+    },
+    {
+      "minute": 15,
+      "isMatchTime": true,
+      "full": {
+        "home": 14.7,
+        "contested": 16.9,
+        "away": 44.6,
+        "dead": 23.7
+      },
+      "inPlay": {
+        "home": 19.3,
+        "contested": 22.2,
+        "away": 58.5
+      }
+    },
+    {
+      "minute": 16,
+      "isMatchTime": true,
+      "full": {
+        "home": 49.7,
+        "contested": 17.2,
+        "away": 20.7,
+        "dead": 12.5
+      },
+      "inPlay": {
+        "home": 56.7,
+        "contested": 19.6,
+        "away": 23.6
+      }
+    },
+    {
+      "minute": 17,
+      "isMatchTime": true,
+      "full": {
+        "home": 55.1,
+        "contested": 7.9,
+        "away": 8.6,
+        "dead": 28.3
+      },
+      "inPlay": {
+        "home": 76.9,
+        "contested": 11.1,
+        "away": 12.0
+      }
+    },
+    {
+      "minute": 18,
+      "isMatchTime": true,
+      "full": {
+        "home": 32.8,
+        "contested": 10.1,
+        "away": 43.9,
+        "dead": 13.3
+      },
+      "inPlay": {
+        "home": 37.8,
+        "contested": 11.6,
+        "away": 50.6
+      }
+    },
+    {
+      "minute": 19,
+      "isMatchTime": true,
+      "full": {
+        "home": 25.1,
+        "contested": 7.5,
+        "away": 10.5,
+        "dead": 56.9
+      },
+      "inPlay": {
+        "home": 58.4,
+        "contested": 17.3,
+        "away": 24.3
+      }
+    },
+    {
+      "minute": 20,
+      "isMatchTime": true,
+      "full": {
+        "home": 33.9,
+        "contested": 8.3,
+        "away": 38.0,
+        "dead": 19.9
+      },
+      "inPlay": {
+        "home": 42.3,
+        "contested": 10.3,
+        "away": 47.4
+      }
+    },
+    {
+      "minute": 21,
+      "isMatchTime": true,
+      "full": {
+        "home": 46.9,
+        "contested": 26.5,
+        "away": 18.0,
+        "dead": 8.6
+      },
+      "inPlay": {
+        "home": 51.3,
+        "contested": 29.0,
+        "away": 19.7
+      }
+    },
+    {
+      "minute": 22,
+      "isMatchTime": true,
+      "full": {
+        "home": 23.0,
+        "contested": 9.7,
+        "away": 16.5,
+        "dead": 50.8
+      },
+      "inPlay": {
+        "home": 46.7,
+        "contested": 19.8,
+        "away": 33.5
+      }
+    },
+    {
+      "minute": 23,
+      "isMatchTime": true,
+      "full": {
+        "home": 10.7,
+        "contested": 8.7,
+        "away": 42.3,
+        "dead": 38.3
+      },
+      "inPlay": {
+        "home": 17.3,
+        "contested": 14.1,
+        "away": 68.6
+      }
+    },
+    {
+      "minute": 24,
+      "isMatchTime": true,
+      "full": {
+        "home": 14.7,
+        "contested": 4.1,
+        "away": 25.1,
+        "dead": 56.1
+      },
+      "inPlay": {
+        "home": 33.5,
+        "contested": 9.3,
+        "away": 57.2
+      }
+    },
+    {
+      "minute": 25,
+      "isMatchTime": true,
+      "full": {
+        "home": 53.9,
+        "contested": 6.8,
+        "away": 36.1,
+        "dead": 3.1
+      },
+      "inPlay": {
+        "home": 55.7,
+        "contested": 7.0,
+        "away": 37.3
+      }
+    },
+    {
+      "minute": 26,
+      "isMatchTime": true,
+      "full": {
+        "home": 38.6,
+        "contested": 14.5,
+        "away": 31.8,
+        "dead": 15.1
+      },
+      "inPlay": {
+        "home": 45.5,
+        "contested": 17.0,
+        "away": 37.5
+      }
+    },
+    {
+      "minute": 27,
+      "isMatchTime": true,
+      "full": {
+        "home": 39.9,
+        "contested": 9.3,
+        "away": 36.8,
+        "dead": 14.1
+      },
+      "inPlay": {
+        "home": 46.4,
+        "contested": 10.8,
+        "away": 42.8
+      }
+    },
+    {
+      "minute": 28,
+      "isMatchTime": true,
+      "full": {
+        "home": 38.6,
+        "contested": 3.2,
+        "away": 25.3,
+        "dead": 32.9
+      },
+      "inPlay": {
+        "home": 57.5,
+        "contested": 4.8,
+        "away": 37.7
+      }
+    },
+    {
+      "minute": 29,
+      "isMatchTime": true,
+      "full": {
+        "home": 39.6,
+        "contested": 14.9,
+        "away": 24.3,
+        "dead": 21.1
+      },
+      "inPlay": {
+        "home": 50.2,
+        "contested": 18.9,
+        "away": 30.9
+      }
+    },
+    {
+      "minute": 30,
+      "isMatchTime": true,
+      "full": {
+        "home": 40.1,
+        "contested": 6.3,
+        "away": 2.9,
+        "dead": 50.7
+      },
+      "inPlay": {
+        "home": 81.5,
+        "contested": 12.7,
+        "away": 5.8
+      }
+    },
+    {
+      "minute": 31,
+      "isMatchTime": true,
+      "full": {
+        "home": 4.3,
+        "contested": 4.1,
+        "away": 2.5,
+        "dead": 89.1
+      },
+      "inPlay": {
+        "home": 39.6,
+        "contested": 37.2,
+        "away": 23.2
+      }
+    },
+    {
+      "minute": 32,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.1,
+        "contested": 0.0,
+        "away": 5.5,
+        "dead": 94.4
+      },
+      "inPlay": {
+        "home": 2.4,
+        "contested": 0.0,
+        "away": 97.6
+      }
+    },
+    {
+      "minute": 33,
+      "isMatchTime": true,
+      "full": {
+        "home": 8.9,
+        "contested": 10.3,
+        "away": 15.7,
+        "dead": 65.0
+      },
+      "inPlay": {
+        "home": 25.5,
+        "contested": 29.5,
+        "away": 45.0
+      }
+    },
+    {
+      "minute": 34,
+      "isMatchTime": true,
+      "full": {
+        "home": 34.7,
+        "contested": 4.7,
+        "away": 30.3,
+        "dead": 30.3
+      },
+      "inPlay": {
+        "home": 49.8,
+        "contested": 6.8,
+        "away": 43.4
+      }
+    },
+    {
+      "minute": 35,
+      "isMatchTime": true,
+      "full": {
+        "home": 32.0,
+        "contested": 7.5,
+        "away": 35.2,
+        "dead": 25.3
+      },
+      "inPlay": {
+        "home": 42.8,
+        "contested": 10.1,
+        "away": 47.1
+      }
+    },
+    {
+      "minute": 36,
+      "isMatchTime": true,
+      "full": {
+        "home": 35.7,
+        "contested": 23.3,
+        "away": 35.5,
+        "dead": 5.5
+      },
+      "inPlay": {
+        "home": 37.8,
+        "contested": 24.6,
+        "away": 37.6
+      }
+    },
+    {
+      "minute": 37,
+      "isMatchTime": true,
+      "full": {
+        "home": 9.3,
+        "contested": 16.3,
+        "away": 50.0,
+        "dead": 24.3
+      },
+      "inPlay": {
+        "home": 12.3,
+        "contested": 21.6,
+        "away": 66.1
+      }
+    },
+    {
+      "minute": 38,
+      "isMatchTime": true,
+      "full": {
+        "home": 12.4,
+        "contested": 2.9,
+        "away": 21.1,
+        "dead": 63.7
+      },
+      "inPlay": {
+        "home": 34.1,
+        "contested": 7.9,
+        "away": 58.0
+      }
+    },
+    {
+      "minute": 39,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 0.0,
+        "dead": 100.0
+      },
+      "inPlay": {
+        "home": 0,
+        "contested": 0,
+        "away": 0
+      }
+    },
+    {
+      "minute": 40,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 0.0,
+        "dead": 100.0
+      },
+      "inPlay": {
+        "home": 0,
+        "contested": 0,
+        "away": 0
+      }
+    },
+    {
+      "minute": 41,
+      "isMatchTime": true,
+      "full": {
+        "home": 54.1,
+        "contested": 1.1,
+        "away": 2.6,
+        "dead": 42.1
+      },
+      "inPlay": {
+        "home": 93.5,
+        "contested": 2.0,
+        "away": 4.5
+      }
+    },
+    {
+      "minute": 42,
+      "isMatchTime": true,
+      "full": {
+        "home": 24.9,
+        "contested": 14.4,
+        "away": 34.3,
+        "dead": 26.4
+      },
+      "inPlay": {
+        "home": 33.9,
+        "contested": 19.6,
+        "away": 46.6
+      }
+    },
+    {
+      "minute": 43,
+      "isMatchTime": true,
+      "full": {
+        "home": 10.2,
+        "contested": 10.7,
+        "away": 17.6,
+        "dead": 61.5
+      },
+      "inPlay": {
+        "home": 26.5,
+        "contested": 27.9,
+        "away": 45.7
+      }
+    },
+    {
+      "minute": 44,
+      "isMatchTime": true,
+      "full": {
+        "home": 58.6,
+        "contested": 14.7,
+        "away": 16.3,
+        "dead": 10.3
+      },
+      "inPlay": {
+        "home": 65.4,
+        "contested": 16.4,
+        "away": 18.2
+      }
+    },
+    {
+      "minute": 45,
+      "isMatchTime": true,
+      "full": {
+        "home": 22.7,
+        "contested": 8.5,
+        "away": 34.1,
+        "dead": 34.7
+      },
+      "inPlay": {
+        "home": 34.8,
+        "contested": 13.1,
+        "away": 52.1
+      }
+    },
+    {
+      "minute": 46,
+      "isMatchTime": true,
+      "full": {
+        "home": 3.7,
+        "contested": 1.9,
+        "away": 35.0,
+        "dead": 59.4
+      },
+      "inPlay": {
+        "home": 9.0,
+        "contested": 4.8,
+        "away": 86.2
+      }
+    },
+    {
+      "minute": 47,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 2.7,
+        "dead": 97.3
+      },
+      "inPlay": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 100.0
+      }
+    },
+    {
+      "minute": 48,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 8.5,
+        "dead": 91.5
+      },
+      "inPlay": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 100.0
+      }
+    },
+    {
+      "minute": 49,
+      "isMatchTime": true,
+      "full": {
+        "home": 1.1,
+        "contested": 0.9,
+        "away": 0.0,
+        "dead": 98.0
+      },
+      "inPlay": {
+        "home": 56.7,
+        "contested": 43.3,
+        "away": 0.0
+      }
+    },
+    {
+      "minute": 50,
+      "isMatchTime": true,
+      "full": {
+        "home": 48.5,
+        "contested": 3.5,
+        "away": 6.3,
+        "dead": 41.6
+      },
+      "inPlay": {
+        "home": 83.1,
+        "contested": 6.1,
+        "away": 10.8
+      }
+    },
+    {
+      "minute": 51,
+      "isMatchTime": true,
+      "full": {
+        "home": 36.5,
+        "contested": 7.5,
+        "away": 17.4,
+        "dead": 38.7
+      },
+      "inPlay": {
+        "home": 59.5,
+        "contested": 12.2,
+        "away": 28.4
+      }
+    },
+    {
+      "minute": 52,
+      "isMatchTime": true,
+      "full": {
+        "home": 10.1,
+        "contested": 5.1,
+        "away": 29.1,
+        "dead": 55.7
+      },
+      "inPlay": {
+        "home": 22.9,
+        "contested": 11.4,
+        "away": 65.7
+      }
+    },
+    {
+      "minute": 53,
+      "isMatchTime": true,
+      "full": {
+        "home": 17.5,
+        "contested": 7.5,
+        "away": 1.1,
+        "dead": 73.9
+      },
+      "inPlay": {
+        "home": 67.3,
+        "contested": 28.6,
+        "away": 4.1
+      }
+    },
+    {
+      "minute": 54,
+      "isMatchTime": true,
+      "full": {
+        "home": 47.1,
+        "contested": 9.6,
+        "away": 14.3,
+        "dead": 29.0
+      },
+      "inPlay": {
+        "home": 66.4,
+        "contested": 13.5,
+        "away": 20.1
+      }
+    },
+    {
+      "minute": 55,
+      "isMatchTime": true,
+      "full": {
+        "home": 29.6,
+        "contested": 10.5,
+        "away": 27.5,
+        "dead": 32.4
+      },
+      "inPlay": {
+        "home": 43.8,
+        "contested": 15.6,
+        "away": 40.6
+      }
+    },
+    {
+      "minute": 56,
+      "isMatchTime": true,
+      "full": {
+        "home": 7.5,
+        "contested": 2.6,
+        "away": 19.9,
+        "dead": 70.0
+      },
+      "inPlay": {
+        "home": 24.9,
+        "contested": 8.7,
+        "away": 66.4
+      }
+    },
+    {
+      "minute": 57,
+      "isMatchTime": true,
+      "full": {
+        "home": 21.0,
+        "contested": 11.8,
+        "away": 9.5,
+        "dead": 57.7
+      },
+      "inPlay": {
+        "home": 49.6,
+        "contested": 27.9,
+        "away": 22.5
+      }
+    },
+    {
+      "minute": 58,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 9.9,
+        "dead": 90.1
+      },
+      "inPlay": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 100.0
+      }
+    },
+    {
+      "minute": 59,
+      "isMatchTime": true,
+      "full": {
+        "home": 5.7,
+        "contested": 6.9,
+        "away": 5.7,
+        "dead": 81.7
+      },
+      "inPlay": {
+        "home": 31.0,
+        "contested": 37.6,
+        "away": 31.4
+      }
+    },
+    {
+      "minute": 60,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 28.2,
+        "dead": 71.8
+      },
+      "inPlay": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 100.0
+      }
+    },
+    {
+      "minute": 61,
+      "isMatchTime": false
+    },
+    {
+      "minute": 62,
+      "isMatchTime": false
+    },
+    {
+      "minute": 63,
+      "isMatchTime": false
+    },
+    {
+      "minute": 64,
+      "isMatchTime": false
+    },
+    {
+      "minute": 65,
+      "isMatchTime": false
+    },
+    {
+      "minute": 66,
+      "isMatchTime": false
+    },
+    {
+      "minute": 67,
+      "isMatchTime": false
+    },
+    {
+      "minute": 68,
+      "isMatchTime": false
+    },
+    {
+      "minute": 69,
+      "isMatchTime": false
+    },
+    {
+      "minute": 70,
+      "isMatchTime": false
+    },
+    {
+      "minute": 71,
+      "isMatchTime": false
+    },
+    {
+      "minute": 72,
+      "isMatchTime": false
+    },
+    {
+      "minute": 73,
+      "isMatchTime": true,
+      "full": {
+        "home": 100.0,
+        "contested": 0.0,
+        "away": 0.0,
+        "dead": 0.0
+      },
+      "inPlay": {
+        "home": 100.0,
+        "contested": 0.0,
+        "away": 0.0
+      }
+    },
+    {
+      "minute": 74,
+      "isMatchTime": true,
+      "full": {
+        "home": 55.9,
+        "contested": 0.5,
+        "away": 22.5,
+        "dead": 21.1
+      },
+      "inPlay": {
+        "home": 70.8,
+        "contested": 0.6,
+        "away": 28.6
+      }
+    },
+    {
+      "minute": 75,
+      "isMatchTime": true,
+      "full": {
+        "home": 63.5,
+        "contested": 0.1,
+        "away": 15.1,
+        "dead": 21.3
+      },
+      "inPlay": {
+        "home": 80.7,
+        "contested": 0.2,
+        "away": 19.1
+      }
+    },
+    {
+      "minute": 76,
+      "isMatchTime": true,
+      "full": {
+        "home": 32.2,
+        "contested": 18.0,
+        "away": 45.2,
+        "dead": 4.6
+      },
+      "inPlay": {
+        "home": 33.8,
+        "contested": 18.9,
+        "away": 47.4
+      }
+    },
+    {
+      "minute": 77,
+      "isMatchTime": true,
+      "full": {
+        "home": 33.7,
+        "contested": 18.4,
+        "away": 22.0,
+        "dead": 25.9
+      },
+      "inPlay": {
+        "home": 45.5,
+        "contested": 24.8,
+        "away": 29.7
+      }
+    },
+    {
+      "minute": 78,
+      "isMatchTime": true,
+      "full": {
+        "home": 56.5,
+        "contested": 19.3,
+        "away": 18.0,
+        "dead": 6.1
+      },
+      "inPlay": {
+        "home": 60.2,
+        "contested": 20.6,
+        "away": 19.2
+      }
+    },
+    {
+      "minute": 79,
+      "isMatchTime": true,
+      "full": {
+        "home": 18.4,
+        "contested": 3.9,
+        "away": 14.9,
+        "dead": 62.7
+      },
+      "inPlay": {
+        "home": 49.4,
+        "contested": 10.6,
+        "away": 40.1
+      }
+    },
+    {
+      "minute": 80,
+      "isMatchTime": true,
+      "full": {
+        "home": 28.3,
+        "contested": 10.8,
+        "away": 38.5,
+        "dead": 22.5
+      },
+      "inPlay": {
+        "home": 36.5,
+        "contested": 13.9,
+        "away": 49.6
+      }
+    },
+    {
+      "minute": 81,
+      "isMatchTime": true,
+      "full": {
+        "home": 17.2,
+        "contested": 8.7,
+        "away": 37.6,
+        "dead": 36.5
+      },
+      "inPlay": {
+        "home": 27.1,
+        "contested": 13.7,
+        "away": 59.2
+      }
+    },
+    {
+      "minute": 82,
+      "isMatchTime": true,
+      "full": {
+        "home": 45.5,
+        "contested": 4.7,
+        "away": 14.1,
+        "dead": 35.6
+      },
+      "inPlay": {
+        "home": 70.7,
+        "contested": 7.3,
+        "away": 21.9
+      }
+    },
+    {
+      "minute": 83,
+      "isMatchTime": true,
+      "full": {
+        "home": 42.8,
+        "contested": 2.1,
+        "away": 28.8,
+        "dead": 26.3
+      },
+      "inPlay": {
+        "home": 58.0,
+        "contested": 2.9,
+        "away": 39.1
+      }
+    },
+    {
+      "minute": 84,
+      "isMatchTime": true,
+      "full": {
+        "home": 41.2,
+        "contested": 10.9,
+        "away": 8.5,
+        "dead": 39.5
+      },
+      "inPlay": {
+        "home": 68.1,
+        "contested": 18.0,
+        "away": 14.0
+      }
+    },
+    {
+      "minute": 85,
+      "isMatchTime": true,
+      "full": {
+        "home": 78.3,
+        "contested": 3.9,
+        "away": 9.6,
+        "dead": 8.2
+      },
+      "inPlay": {
+        "home": 85.3,
+        "contested": 4.2,
+        "away": 10.5
+      }
+    },
+    {
+      "minute": 86,
+      "isMatchTime": true,
+      "full": {
+        "home": 24.1,
+        "contested": 5.9,
+        "away": 5.3,
+        "dead": 64.7
+      },
+      "inPlay": {
+        "home": 68.4,
+        "contested": 16.6,
+        "away": 14.9
+      }
+    },
+    {
+      "minute": 87,
+      "isMatchTime": true,
+      "full": {
+        "home": 8.5,
+        "contested": 17.5,
+        "away": 37.5,
+        "dead": 36.5
+      },
+      "inPlay": {
+        "home": 13.4,
+        "contested": 27.5,
+        "away": 59.0
+      }
+    },
+    {
+      "minute": 88,
+      "isMatchTime": true,
+      "full": {
+        "home": 36.4,
+        "contested": 20.0,
+        "away": 40.1,
+        "dead": 3.5
+      },
+      "inPlay": {
+        "home": 37.7,
+        "contested": 20.7,
+        "away": 41.6
+      }
+    },
+    {
+      "minute": 89,
+      "isMatchTime": true,
+      "full": {
+        "home": 15.9,
+        "contested": 5.0,
+        "away": 41.5,
+        "dead": 37.6
+      },
+      "inPlay": {
+        "home": 25.4,
+        "contested": 8.0,
+        "away": 66.6
+      }
+    },
+    {
+      "minute": 90,
+      "isMatchTime": true,
+      "full": {
+        "home": 6.8,
+        "contested": 16.2,
+        "away": 6.7,
+        "dead": 70.3
+      },
+      "inPlay": {
+        "home": 22.9,
+        "contested": 54.5,
+        "away": 22.6
+      }
+    },
+    {
+      "minute": 91,
+      "isMatchTime": true,
+      "full": {
+        "home": 25.1,
+        "contested": 2.1,
+        "away": 18.2,
+        "dead": 54.6
+      },
+      "inPlay": {
+        "home": 55.4,
+        "contested": 4.6,
+        "away": 40.1
+      }
+    },
+    {
+      "minute": 92,
+      "isMatchTime": true,
+      "full": {
+        "home": 5.9,
+        "contested": 0.7,
+        "away": 15.3,
+        "dead": 78.1
+      },
+      "inPlay": {
+        "home": 26.8,
+        "contested": 3.4,
+        "away": 69.8
+      }
+    },
+    {
+      "minute": 93,
+      "isMatchTime": true,
+      "full": {
+        "home": 29.7,
+        "contested": 8.0,
+        "away": 19.5,
+        "dead": 42.8
+      },
+      "inPlay": {
+        "home": 52.0,
+        "contested": 14.0,
+        "away": 34.0
+      }
+    },
+    {
+      "minute": 94,
+      "isMatchTime": true,
+      "full": {
+        "home": 56.2,
+        "contested": 28.9,
+        "away": 10.8,
+        "dead": 4.1
+      },
+      "inPlay": {
+        "home": 58.6,
+        "contested": 30.1,
+        "away": 11.3
+      }
+    },
+    {
+      "minute": 95,
+      "isMatchTime": true,
+      "full": {
+        "home": 5.7,
+        "contested": 8.9,
+        "away": 43.7,
+        "dead": 41.7
+      },
+      "inPlay": {
+        "home": 9.8,
+        "contested": 15.2,
+        "away": 74.9
+      }
+    },
+    {
+      "minute": 96,
+      "isMatchTime": true,
+      "full": {
+        "home": 65.5,
+        "contested": 3.1,
+        "away": 11.7,
+        "dead": 19.8
+      },
+      "inPlay": {
+        "home": 81.6,
+        "contested": 3.8,
+        "away": 14.5
+      }
+    },
+    {
+      "minute": 97,
+      "isMatchTime": true,
+      "full": {
+        "home": 20.5,
+        "contested": 6.2,
+        "away": 16.8,
+        "dead": 56.5
+      },
+      "inPlay": {
+        "home": 47.1,
+        "contested": 14.3,
+        "away": 38.7
+      }
+    },
+    {
+      "minute": 98,
+      "isMatchTime": true,
+      "full": {
+        "home": 16.0,
+        "contested": 7.5,
+        "away": 53.3,
+        "dead": 23.3
+      },
+      "inPlay": {
+        "home": 20.9,
+        "contested": 9.7,
+        "away": 69.4
+      }
+    },
+    {
+      "minute": 99,
+      "isMatchTime": true,
+      "full": {
+        "home": 55.9,
+        "contested": 16.6,
+        "away": 13.1,
+        "dead": 14.4
+      },
+      "inPlay": {
+        "home": 65.3,
+        "contested": 19.4,
+        "away": 15.3
+      }
+    },
+    {
+      "minute": 100,
+      "isMatchTime": true,
+      "full": {
+        "home": 49.4,
+        "contested": 7.8,
+        "away": 9.4,
+        "dead": 33.4
+      },
+      "inPlay": {
+        "home": 74.2,
+        "contested": 11.7,
+        "away": 14.1
+      }
+    },
+    {
+      "minute": 101,
+      "isMatchTime": true,
+      "full": {
+        "home": 17.1,
+        "contested": 5.7,
+        "away": 17.5,
+        "dead": 59.7
+      },
+      "inPlay": {
+        "home": 42.3,
+        "contested": 14.2,
+        "away": 43.5
+      }
+    },
+    {
+      "minute": 102,
+      "isMatchTime": true,
+      "full": {
+        "home": 32.5,
+        "contested": 14.9,
+        "away": 11.1,
+        "dead": 41.5
+      },
+      "inPlay": {
+        "home": 55.6,
+        "contested": 25.4,
+        "away": 18.9
+      }
+    },
+    {
+      "minute": 103,
+      "isMatchTime": true,
+      "full": {
+        "home": 9.1,
+        "contested": 7.8,
+        "away": 17.4,
+        "dead": 65.7
+      },
+      "inPlay": {
+        "home": 26.6,
+        "contested": 22.7,
+        "away": 50.7
+      }
+    },
+    {
+      "minute": 104,
+      "isMatchTime": true,
+      "full": {
+        "home": 48.3,
+        "contested": 19.5,
+        "away": 11.9,
+        "dead": 20.4
+      },
+      "inPlay": {
+        "home": 60.6,
+        "contested": 24.5,
+        "away": 14.9
+      }
+    },
+    {
+      "minute": 105,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.4,
+        "contested": 0.5,
+        "away": 2.1,
+        "dead": 96.9
+      },
+      "inPlay": {
+        "home": 13.0,
+        "contested": 17.4,
+        "away": 69.6
+      }
+    },
+    {
+      "minute": 106,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 0.0,
+        "dead": 100.0
+      },
+      "inPlay": {
+        "home": 0,
+        "contested": 0,
+        "away": 0
+      }
+    },
+    {
+      "minute": 107,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 0.0,
+        "dead": 100.0
+      },
+      "inPlay": {
+        "home": 0,
+        "contested": 0,
+        "away": 0
+      }
+    },
+    {
+      "minute": 108,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 8.5,
+        "dead": 91.5
+      },
+      "inPlay": {
+        "home": 0.0,
+        "contested": 0.0,
+        "away": 100.0
+      }
+    },
+    {
+      "minute": 109,
+      "isMatchTime": true,
+      "full": {
+        "home": 31.5,
+        "contested": 6.1,
+        "away": 15.8,
+        "dead": 46.5
+      },
+      "inPlay": {
+        "home": 59.0,
+        "contested": 11.5,
+        "away": 29.6
+      }
+    },
+    {
+      "minute": 110,
+      "isMatchTime": true,
+      "full": {
+        "home": 30.1,
+        "contested": 6.1,
+        "away": 5.9,
+        "dead": 57.8
+      },
+      "inPlay": {
+        "home": 71.4,
+        "contested": 14.5,
+        "away": 14.1
+      }
+    },
+    {
+      "minute": 111,
+      "isMatchTime": true,
+      "full": {
+        "home": 33.9,
+        "contested": 6.3,
+        "away": 48.2,
+        "dead": 11.6
+      },
+      "inPlay": {
+        "home": 38.4,
+        "contested": 7.1,
+        "away": 54.5
+      }
+    },
+    {
+      "minute": 112,
+      "isMatchTime": true,
+      "full": {
+        "home": 20.5,
+        "contested": 4.2,
+        "away": 7.7,
+        "dead": 67.6
+      },
+      "inPlay": {
+        "home": 63.4,
+        "contested": 13.0,
+        "away": 23.7
+      }
+    },
+    {
+      "minute": 113,
+      "isMatchTime": true,
+      "full": {
+        "home": 2.5,
+        "contested": 3.0,
+        "away": 23.5,
+        "dead": 71.0
+      },
+      "inPlay": {
+        "home": 8.7,
+        "contested": 10.3,
+        "away": 80.9
+      }
+    },
+    {
+      "minute": 114,
+      "isMatchTime": true,
+      "full": {
+        "home": 12.9,
+        "contested": 5.1,
+        "away": 24.9,
+        "dead": 57.1
+      },
+      "inPlay": {
+        "home": 30.0,
+        "contested": 11.8,
+        "away": 58.2
+      }
+    },
+    {
+      "minute": 115,
+      "isMatchTime": true,
+      "full": {
+        "home": 15.5,
+        "contested": 4.1,
+        "away": 27.7,
+        "dead": 52.7
+      },
+      "inPlay": {
+        "home": 32.9,
+        "contested": 8.6,
+        "away": 58.5
+      }
+    },
+    {
+      "minute": 116,
+      "isMatchTime": true,
+      "full": {
+        "home": 21.7,
+        "contested": 21.0,
+        "away": 44.8,
+        "dead": 12.5
+      },
+      "inPlay": {
+        "home": 24.8,
+        "contested": 24.0,
+        "away": 51.2
+      }
+    },
+    {
+      "minute": 117,
+      "isMatchTime": true,
+      "full": {
+        "home": 0.0,
+        "contested": 3.7,
+        "away": 5.5,
+        "dead": 90.8
+      },
+      "inPlay": {
+        "home": 0.0,
+        "contested": 40.6,
+        "away": 59.4
+      }
+    },
+    {
+      "minute": 118,
+      "isMatchTime": true,
+      "full": {
+        "home": 11.3,
+        "contested": 2.3,
+        "away": 28.0,
+        "dead": 58.3
+      },
+      "inPlay": {
+        "home": 27.2,
+        "contested": 5.6,
+        "away": 67.2
+      }
+    },
+    {
+      "minute": 119,
+      "isMatchTime": true,
+      "full": {
+        "home": 13.1,
+        "contested": 11.5,
+        "away": 32.3,
+        "dead": 43.1
+      },
+      "inPlay": {
+        "home": 23.1,
+        "contested": 20.1,
+        "away": 56.8
+      }
+    },
+    {
+      "minute": 120,
+      "isMatchTime": true,
+      "full": {
+        "home": 29.1,
+        "contested": 13.6,
+        "away": 21.1,
+        "dead": 36.2
+      },
+      "inPlay": {
+        "home": 45.7,
+        "contested": 21.3,
+        "away": 33.0
+      }
+    },
+    {
+      "minute": 121,
+      "isMatchTime": true,
+      "full": {
+        "home": 19.6,
+        "contested": 0.0,
+        "away": 7.1,
+        "dead": 73.3
+      },
+      "inPlay": {
+        "home": 73.3,
+        "contested": 0.0,
+        "away": 26.7
+      }
+    },
+    {
+      "minute": 122,
+      "isMatchTime": true,
+      "full": {
+        "home": 21.2,
+        "contested": 10.6,
+        "away": 34.7,
+        "dead": 33.5
+      },
+      "inPlay": {
+        "home": 31.9,
+        "contested": 15.9,
+        "away": 52.2
+      }
+    },
+    {
+      "minute": 123,
+      "isMatchTime": true,
+      "full": {
+        "home": 39.3,
+        "contested": 6.2,
+        "away": 25.3,
+        "dead": 29.2
+      },
+      "inPlay": {
+        "home": 55.6,
+        "contested": 8.8,
+        "away": 35.7
+      }
+    },
+    {
+      "minute": 124,
+      "isMatchTime": true,
+      "full": {
+        "home": 38.0,
+        "contested": 11.8,
+        "away": 31.1,
+        "dead": 19.1
+      },
+      "inPlay": {
+        "home": 47.0,
+        "contested": 14.6,
+        "away": 38.5
+      }
+    },
+    {
+      "minute": 125,
+      "isMatchTime": true,
+      "full": {
+        "home": 22.3,
+        "contested": 11.8,
+        "away": 38.3,
+        "dead": 27.6
+      },
+      "inPlay": {
+        "home": 30.8,
+        "contested": 16.3,
+        "away": 52.9
+      }
+    },
+    {
+      "minute": 126,
+      "isMatchTime": true,
+      "full": {
+        "home": 3.3,
+        "contested": 5.1,
+        "away": 32.5,
+        "dead": 59.1
+      },
+      "inPlay": {
+        "home": 8.2,
+        "contested": 12.4,
+        "away": 79.4
+      }
+    },
+    {
+      "minute": 127,
+      "isMatchTime": false
+    },
+    {
+      "minute": 128,
+      "isMatchTime": false
+    },
+    {
+      "minute": 129,
+      "isMatchTime": false
+    },
+    {
+      "minute": 130,
+      "isMatchTime": false
+    },
+    {
+      "minute": 131,
+      "isMatchTime": false
+    },
+    {
+      "minute": 132,
+      "isMatchTime": false
+    },
+    {
+      "minute": 133,
+      "isMatchTime": false
+    }
+  ]
+}
