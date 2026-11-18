@@ -1,0 +1,263 @@
+================================================================================
+  TECHNICAL DOCUMENT — POSSESSION DETECTION
+  Ethan Mabini · More Than A Hack 2027
+================================================================================
+
+
+1  THE APPROACH
+─────────────────────────────────────────────────────────────────────
+
+We built a heuristic possession detector that fuses three signals from
+the provided data, with no machine-learning model and no training data
+from any game.  The design was chosen for two reasons: (1) the ball is
+missing on 41 % of graded frames, so any single-signal approach breaks
+immediately, and (2) the ranking metric (spellF1) punishes fragmented
+possession sequences far more than it rewards per-frame accuracy, which
+means smoothing and structural cleanup matter more than a fancier frame-
+level classifier.
+
+The pipeline has four stages:
+
+  Stage 1 — Multi-player control scoring (from tracking)
+    For every frame where the ball is visible, we compute an aggregate
+    "control score" for each team.  Every player within a 15-metre
+    control radius of the ball contributes an inverse-distance weight
+    (1 / (1 + d)), and the single nearest player receives an additional
+    3× bonus.  The team with the higher aggregate score gets the frame.
+    
+    This is a deliberate improvement over the reference baseline, which
+    uses only the single nearest player.  The multi-player score is more
+    stable in crowded areas — aerial duels, tackles and contested loose
+    balls — where the nearest player can flicker between teams frame to
+    frame.
+
+  Stage 2 — Smart Tagging integration (dead ball + team hints)
+    We parse the Smart Tagging XML for two orthogonal signals:
+    
+      (a) Dead-ball mask:  Every SET PIECES event marks a window as dead
+          ball (3 seconds before the restart to 1 second after).  Kick-
+          offs get a longer 8-second lead-in, because the ball is out of
+          play for longer before the restart.
+    
+      (b) Team hints:  Possession-indicative phase codes — BUILD UP,
+          PROGRESSION, BALL IN FINAL THIRD, BALL IN THE BOX, CREATING
+          CHANCES, LONG BALL, ATTACKING TRANSITION — carry a Team tag
+          (Barcelona → HOME, Atletic Club → AWAY).  On frames where the
+          ball is not visible and Stage 1 produced no answer, we adopt
+          the hint.
+
+  Stage 3 — Temporal smoothing
+    A centred majority vote with a half-width of 75 frames (3 seconds).
+    This is wider than the baseline's best setting (smooth50 = 2 s) and
+    was chosen to push spellF1 higher at a small macroF1 cost: spellF1
+    rewards fewer, cleaner possessions, while macroF1 is nearly flat
+    across smoothing windows.
+    
+    After smoothing, remaining NOBODY gaps within each half are forward-
+    filled with the last known team label, so that ball-invisible
+    stretches do not create artificial dead-ball runs.
+
+  Stage 4 — Micro-segment removal
+    Any H or A run shorter than 50 frames (2 seconds) is replaced with
+    the surrounding label.  Very short segments are almost always tracker
+    noise — a flickered identity or a mislocated ball — and removing them
+    directly reduces the possession count, which is the dominant driver
+    of spellF1.
+
+
+Why this rather than something else
+────────────────────────────────────
+We considered and set aside two alternative directions:
+
+  • Kloppy-based approach (test_first_pass.py).  An early prototype
+    loaded the tracking through kloppy, computed nearest-player distance
+    with numpy/pandas, and used a rolling median of the distance
+    differential.  It produced only H, A, X labels — no dead-ball
+    detection at all.  Scoring confirmed that missing D labels badly
+    damages macroF1.  Dropped in favour of the current pipeline.
+
+  • Video-based approach.  We briefly explored extracting visual cues
+    from the tactical MP4 (jersey colour blobs near the ball), but the
+    tracking already carries team membership per slot, so the video would
+    only help where the tracking is wrong — and the tracking is automatic
+    anyway.  The engineering cost was not justified.
+
+
+2  ASSETS USED
+─────────────────────────────────────────────────────────────────────
+
+  Used:
+    • BAR-ATH_tactical_atd.xml    ATD metadata — team assignment of
+                                  each of the 46 track slots (24 home,
+                                  22 away).
+    • BAR-ATH_tactical_atd.txt    ATD raw tracking — 199,319 frames of
+                                  player + ball positions, normalised
+                                  0–1.  Coordinates scaled to metres
+                                  using pitch dimensions 105.3 × 68.0.
+    • BAR-ATH_tactical_smart_tagging.xml
+                                  638 automatic tactical annotations.
+                                  Used for dead-ball detection (59 SET
+                                  PIECES events) and team-possession
+                                  hints (~288 possession-phase events
+                                  with valid Team tags).
+
+  Not used / tried and dropped:
+    • Tactical video (.mp4) — not decoded.  All signals come from the
+      structured tracking and tagging files.
+    • Broadcast source — the broadcast ATD, video and homography were
+      not used.  The broadcast is not frame-aligned to the tactical
+      video, the homography is valid on only 65.8 % of frames, and
+      the additional complexity of temporal registration was not
+      justified by the available time.
+    • Homography — not used.  Since we work entirely in normalised
+      pitch coordinates (from the tracking) and do not project onto
+      video frames, the camera-to-pitch matrix was unnecessary.
+
+
+3  TRAINING DATA
+─────────────────────────────────────────────────────────────────────
+
+None.
+
+The system is entirely rule-based.  It uses no labelled dataset of any
+kind — no hand-labelled possession data from this game or any other, no
+pre-trained model, no external event data.  The 5-minute public ground
+truth was used exclusively to verify that the output format was correct
+and to sanity-check the scorer; it was never used for tuning parameters.
+
+The two tuneable constants (smoothing window = 75 frames, minimum
+segment length = 50 frames) were set by reasoning about the problem
+structure: spellF1 penalises fragmentation, so we chose values
+aggressive enough to suppress tracker flicker without being so large
+that real possession changes are erased.
+
+
+4  POSSESSION RULES IMPLEMENTED
+─────────────────────────────────────────────────────────────────────
+
+4.1  Who has the ball
+
+  The team with the higher aggregate control score owns the frame.  The
+  score sums inverse-distance contributions from every player within
+  15 m of the ball and adds a 3× bonus for the nearest player.  When
+  scores are exactly tied, the nearest player's team wins.
+
+  This means a team with more players near the ball can "own" the frame
+  even when the other team has the single closest player — which is a
+  crude proxy for the challenge's notion of "controlled possession"
+  requiring more than a single touch.
+
+4.2  Loose balls and contested situations
+
+  When the ball is visible but no players are close enough to register
+  a meaningful score (all players > 15 m), the frame is left as NOBODY
+  and later forward-filled.  In effect, possession stays with whoever
+  had it last — matching the challenge rule that "in phases where the
+  ball is contested or loose, possession stays with the last team that
+  had it."
+
+4.3  Ball not visible
+
+  On the 41 % of graded frames where the tracker lost the ball:
+    1. If a Smart Tagging phase is active with a team hint, use it.
+    2. Otherwise, leave as NOBODY and let forward-fill propagate the
+       last known label.
+
+4.4  Dead ball / stoppages
+
+  Dead ball is detected from the SET PIECES code in Smart Tagging.
+  Each set piece marks a window around the restart as D.  Frames
+  without ball visibility that are not covered by a Smart Tagging hint
+  and not forward-filled default to D.
+
+  We do not attempt to detect dead ball from the tracking alone (e.g.
+  ball speed = 0 or ball off-pitch).  The baseline approach of calling
+  every ball-invisible frame "dead" conflates tracker failure with
+  actual stoppages, which is why the baseline's D class is weak.
+
+4.5  Restarts
+
+  At kickoffs, we mark an 8-second pre-restart window as dead.  For
+  all other set pieces (throw-ins, corners, free kicks, goal kicks),
+  we mark 3 seconds before and 1 second after the Smart Tagging start
+  time.  Possession after the restart is determined by the control
+  score, not by the set-piece team tag, because the taker's team does
+  not always retain the ball.
+
+
+5  LIMITATIONS
+─────────────────────────────────────────────────────────────────────
+
+  • Ball visibility gap.  41 % of graded frames have no ball position.
+    On those frames we rely on Smart Tagging hints or forward-fill,
+    both of which propagate stale labels across real possession changes.
+    Any transition that happens during a ball gap is missed entirely.
+    With more time, we would interpolate ball position across short gaps
+    (< 1 second) using player trajectories as anchors.
+
+  • Dead-ball detection is coarse.  We only detect stoppages that
+    coincide with SET PIECES events (59 of them).  Fouls, injuries,
+    VAR reviews and other stoppages that are not tagged as set pieces
+    are invisible to us.  This likely under-counts D labels and splits
+    some true stoppages into false possessions.
+
+  • No possession-structure modelling.  The system treats each frame
+    independently (after smoothing).  It has no model of what a
+    possession looks like — no notion of minimum duration, no transition
+    probability, no HMM or CRF.  Micro-segment removal is a blunt
+    post-hoc fix.  A proper sequence model would likely improve spellF1
+    substantially.
+
+  • The smoothing window is a global constant.  75 frames is a
+    compromise: too short and possessions fragment, too long and fast
+    transitions are erased.  An adaptive window (wider during open play,
+    narrower near set pieces) would be better.
+
+  • No use of player velocity or formation.  The tracking includes
+    player speed, and formation shape (compact vs stretched) is a strong
+    cue for possession vs counter-attack.  We use only position.
+
+  • Smart Tagging N/A entries.  36 Smart Tagging events (including all
+    throw-ins) have Team = "N/A".  We discard these entirely.  For
+    throw-ins specifically, the throwing team could often be inferred
+    from which player is nearest the touchline.
+
+  • Broadcast video unused.  The broadcast angle could resolve some
+    tracker ambiguities (e.g. ball visibility during aerial play), but
+    the temporal alignment problem was not tackled.
+
+
+6  REPRODUCTION
+─────────────────────────────────────────────────────────────────────
+
+Requirements:
+  Python 3.8+, numpy.  No other dependencies.
+  pip install -r requirements.txt
+
+Data:
+  Download the match assets and unpack into data/ as described in
+  DATA.md, or set MTAH_DATA_DIR to their location.
+
+Run:
+  python solution.py
+
+  Flags:
+    --window N        smoothing half-width in frames (default: 75)
+    --min-segment N   minimum H/A segment length in frames (default: 50)
+    --out DIR         output directory (default: evaluation/results/)
+    --name NAME       output filename without .csv (default: improved_possession)
+
+  Writes:  evaluation/results/improved_possession.csv
+
+Score:
+  python evaluation/run_evaluation.py
+
+  Scores every .csv in evaluation/results/ against the public 5-minute
+  ground truth and prints a ranked board with macroF1 and spellF1.
+
+  The pipeline runs in about 2 minutes on a laptop — it streams 199,319
+  lines of raw tracking, computes per-frame control scores, then applies
+  smoothing and cleanup.  No GPU required.
+
+================================================================================
+
